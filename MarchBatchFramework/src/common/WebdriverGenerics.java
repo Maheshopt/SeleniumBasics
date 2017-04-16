@@ -19,4 +19,11 @@ public class WebdriverGenerics {
 	{
 		driver.findElement(By.id(id)).click();
 	}
+
+	// Added by bala
+	public void clickByName(String name)
+	{
+		driver.findElement(By.name(name)).click();
+	}
+
 }
