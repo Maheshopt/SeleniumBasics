@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MarchBatch" parallel="false">
+  
+  <parameter name="APP_URL" value="https://facebook.com/"></parameter>
+  
+  
+  <test name="test1" enabled="false">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="testcase.Testcase001"/>
+    </classes>
+  </test> 
+  
+  
+  <test name="test2" enabled="false">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="testcase.Testcase002"></class>
+    </classes>
+  </test> 
+
+  <test name="test3 - hardAssert and SoftAssert">
+  <parameter name="BrowserName" value="chrome"></parameter>
+    <classes>
+      <class name="testcase.HardAssert_SoftAssert_TestNG"></class>
+    </classes>
+  </test> 
+    
+</suite>
